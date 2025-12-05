@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Menu - Menu Makanan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="—Pngtree—food logo_8366720.png">
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="section">
+    <h2>Menu Kami</h2>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">Semua</button>
+      <button class="filter-btn" data-filter="berat">Berat</button>
+      <button class="filter-btn" data-filter="ringan">Ringan</button>
+      <button class="filter-btn" data-filter="minuman">Minuman</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+      <!-- Example cards -->
+      <article class="menu-card" data-category="berat">
+        <img src="nasgor.png" alt="Nasi Goreng">
+        <div class="card-body">
+          <h3>Nasi Goreng Spesial</h3>
+          <p class="price">Rp18.000</p>
+          <p class="desc">Nasi goreng dengan bumbu spesial dan topping ayam.</p>
+          <div class="card-foot">
+            <div class="rating">★★★★☆</div>
+            <button class="order-btn">Pesan Sekarang</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="berat">
+        <img src="sate.png" alt="Sate Ayam">
+        <div class="card-body">
+          <h3>Sate Ayam</h3>
+          <p class="price">Rp22.000</p>
+          <p class="desc">Sate bumbu kacang, empuk dan legit.</p>
+          <div class="card-foot">
+            <div class="rating">★★★★★</div>
+            <button class="order-btn">Pesan Sekarang</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="ringan">
+        <img src="salad.png" alt="Salad Sayur">
+        <div class="card-body">
+          <h3>Salad Sayur</h3>
+          <p class="price">Rp15.000</p>
+          <p class="desc">Campuran selada, tomat, dan saus spesial.</p>
+          <div class="card-foot">
+            <div class="rating">★★★★☆</div>
+            <button class="order-btn">Pesan Sekarang</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="minuman">
+        <img src="teh.png" alt="Teh Lemon">
+        <div class="card-body">
+          <h3>Teh Lemon</h3>
+          <p class="price">Rp10.000</p>
+          <p class="desc">Menyegarkan, cocok untuk menemani makan.</p>
+          <div class="card-foot">
+            <div class="rating">★★★☆☆</div>
+            <button class="order-btn">Pesan Sekarang</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year2"></span> Menu Makanan • All rights reserved</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
